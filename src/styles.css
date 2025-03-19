@@ -1,0 +1,257 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #222;
+    color: white;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4d4d;
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/gym-background.jpg') no-repeat center center/cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  /* Join Button */
+  .btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #e63946;
+    transform: scale(1.1);
+  }
+  
+  /* Registration Page */
+  .register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/gym-registration-bg.jpg') no-repeat center center/cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .register-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .register-box:hover {
+    transform: translateY(0);
+  }
+  
+  .register-box h2 {
+    margin-bottom: 20px;
+    color: #ff4d4d;
+  }
+  
+  .register-box input,
+  .register-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .register-box input:focus,
+  .register-box textarea:focus {
+    transform: scale(1.05);
+  }
+  
+  .register-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .register-box button:hover {
+    background: #e63946;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Page */
+  .contact-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/contact-bg.jpg') no-repeat center center/cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .contact-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transform: translateX(-10px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .contact-box:hover {
+    transform: translateX(0);
+  }
+  
+  /* About Page */
+  .about-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/about-bg.jpg') no-repeat center center/cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .about-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .about-box:hover {
+    transform: scale(1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
